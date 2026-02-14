@@ -16,4 +16,7 @@ A LangGraph-based multi-agent system using Mistral AI for parallel research, cod
 See DEPLOYMENT.md
 
 ## License
-MIT
+
+# Mistral + LangGraph Agentic AI
+Multi-agent research & code generator using Mistral AI and LangGraph.
+Deployed on Render.
