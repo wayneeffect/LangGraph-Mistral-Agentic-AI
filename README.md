@@ -20,3 +20,6 @@ See DEPLOYMENT.md
 # Mistral + LangGraph Agentic AI
 Multi-agent research & code generator using Mistral AI and LangGraph.
 Deployed on Render.
+
+# Thaddeus (LangGraph-Mistral Agentic AI)
+https://langgraph-mistral-agentic-ai.onrender.com/
