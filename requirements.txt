@@ -1,6 +1,6 @@
-streamlit==1.39.0          # Latest stable
-langgraph==0.2.14          # Current stable
-langchain-mistralai==0.1.0 # Updated for Mistral
-langchain-core==0.3.0      # Compatible core
-requests==2.32.3
-python-dotenv==1.0.1       # For local .env if you ever test
+streamlit>=1.39.0
+langgraph>=0.2.14
+langchain-mistralai>=0.1.0
+langchain-core>=0.3.0
+requests>=2.32.0
+python-dotenv>=1.0.1
