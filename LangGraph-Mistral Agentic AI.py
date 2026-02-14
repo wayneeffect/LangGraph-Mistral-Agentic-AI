@@ -9,8 +9,14 @@ from langchain_core.tools import tool
 import operator
 import json
 
-# Mistral API Setup (use your free API key from mistral.ai)
-MISTRAL_API_KEY = st.secrets.get("MISTRAL_API_KEY", "your-free-mistral-api-key-here")  # Add to Render secrets
+import os
+
+# Load Mistral API key from environment variables (set in Render dashboard)
+MISTRAL_API_KEY = os.getenv("MISTRAL_API_KEY")
+
+if not MISTRAL_API_KEY:
+    raise ValueError("MISTRAL_API_KEY not found in environment variables. Please set it in Render dashboard.")
+
 llm = ChatMistralAI(
     model="mistral-nemo",  # Free tier model
     api_key=MISTRAL_API_KEY,
