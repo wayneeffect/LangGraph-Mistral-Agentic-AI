@@ -58,7 +58,7 @@ def research_agent(state: AgentState) -> AgentState:
     return state
 
 def code_agent(state: AgentState) -> AgentState:
-    prompt = f"Based on research '{state['research]}', generate Python code for the goal."
+    prompt = f"Based on research '{state['research']}', generate Python code for the goal."
     response = llm.invoke([HumanMessage(content=prompt)])
     state["code"] = response.content
     return state
