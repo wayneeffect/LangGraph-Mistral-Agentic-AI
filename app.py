@@ -18,7 +18,7 @@ if not MISTRAL_API_KEY:
     raise ValueError("MISTRAL_API_KEY not found in environment variables. Please set it in Render dashboard.")
 
 llm = ChatMistralAI(
-    model="mistral-nemo",  # Free tier model
+    model="mistral-large-latest",  # High quality, free tier
     api_key=MISTRAL_API_KEY,
     temperature=0.7,
     max_tokens=1000
